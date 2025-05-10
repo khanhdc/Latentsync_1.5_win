@@ -11,7 +11,11 @@ conda install -y -c conda-forge ffmpeg
 pip install -r requirements.txt
 
 # OpenCV dependencies
-sudo apt -y install libgl1
+#sudo apt -y install libgl1
+
+#For window user
+conda install -c conda-forge opencv
+
 
 # Download all the checkpoints from HuggingFace
 huggingface-cli download ByteDance/LatentSync-1.5 --local-dir checkpoints --exclude "*.git*" "README.md"
